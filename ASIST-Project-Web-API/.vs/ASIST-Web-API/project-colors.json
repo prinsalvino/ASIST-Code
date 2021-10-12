@@ -1,0 +1,61 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "834417f8-1cef-4f1c-9e7f-634e195e02f7": {
+      "ProjectGuid": "834417f8-1cef-4f1c-9e7f-634e195e02f7",
+      "DisplayName": "ASIST-Web-API",
+      "ColorIndex": 0
+    },
+    "a33c44f8-3cf2-46b5-a823-cb22c163c714": {
+      "ProjectGuid": "a33c44f8-3cf2-46b5-a823-cb22c163c714",
+      "DisplayName": "Test",
+      "ColorIndex": 1
+    },
+    "537f04ea-93f5-467a-b8aa-14a7fc7b5150": {
+      "ProjectGuid": "537f04ea-93f5-467a-b8aa-14a7fc7b5150",
+      "DisplayName": "DAL",
+      "ColorIndex": 2
+    },
+    "1f2c53a5-ce23-4595-b9a2-5e15a7d2ea56": {
+      "ProjectGuid": "1f2c53a5-ce23-4595-b9a2-5e15a7d2ea56",
+      "DisplayName": "Domain",
+      "ColorIndex": 3
+    },
+    "847b4832-1941-4ed7-8620-dabc8474c0a5": {
+      "ProjectGuid": "847b4832-1941-4ed7-8620-dabc8474c0a5",
+      "DisplayName": "ServiceLayer",
+      "ColorIndex": 4
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "f5d21de2-c42f-4dc9-badc-67d028a78181": {
+      "ProjectGuid": "f5d21de2-c42f-4dc9-badc-67d028a78181",
+      "DisplayName": "DAL",
+      "ColorIndex": 5
+    },
+    "d0f95b4d-9f68-4015-a78f-4d0c7789d4e0": {
+      "ProjectGuid": "d0f95b4d-9f68-4015-a78f-4d0c7789d4e0",
+      "DisplayName": "Domain",
+      "ColorIndex": 6
+    },
+    "dffa4555-e517-4836-85da-43babb13c73d": {
+      "ProjectGuid": "dffa4555-e517-4836-85da-43babb13c73d",
+      "DisplayName": "Test",
+      "ColorIndex": 7
+    },
+    "7bdcd939-cfd6-475b-bdfa-fe3bc146b592": {
+      "ProjectGuid": "7bdcd939-cfd6-475b-bdfa-fe3bc146b592",
+      "DisplayName": "Domain",
+      "ColorIndex": 8
+    },
+    "59ce1ec6-e0f0-4b95-a669-0bbfa6d4295b": {
+      "ProjectGuid": "59ce1ec6-e0f0-4b95-a669-0bbfa6d4295b",
+      "DisplayName": "DAL",
+      "ColorIndex": 9
+    }
+  },
+  "NextColorIndex": 10
+}
