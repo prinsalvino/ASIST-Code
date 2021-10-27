@@ -1,0 +1,56 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "834417f8-1cef-4f1c-9e7f-634e195e02f7": {
+      "ProjectGuid": "834417f8-1cef-4f1c-9e7f-634e195e02f7",
+      "DisplayName": "ASIST-Web-API",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "1f2c53a5-ce23-4595-b9a2-5e15a7d2ea56": {
+      "ProjectGuid": "1f2c53a5-ce23-4595-b9a2-5e15a7d2ea56",
+      "DisplayName": "Domain",
+      "ColorIndex": 1
+    },
+    "621b0a07-cde3-4581-a040-5c10da4d07f5": {
+      "ProjectGuid": "621b0a07-cde3-4581-a040-5c10da4d07f5",
+      "DisplayName": "Test",
+      "ColorIndex": 2
+    },
+    "847b4832-1941-4ed7-8620-dabc8474c0a5": {
+      "ProjectGuid": "847b4832-1941-4ed7-8620-dabc8474c0a5",
+      "DisplayName": "ServiceLayer",
+      "ColorIndex": 3
+    },
+    "537f04ea-93f5-467a-b8aa-14a7fc7b5150": {
+      "ProjectGuid": "537f04ea-93f5-467a-b8aa-14a7fc7b5150",
+      "DisplayName": "DAL",
+      "ColorIndex": 4
+    },
+    "a9b1c2d3-0bcc-43cd-81b9-72438a4e0c6f": {
+      "ProjectGuid": "a9b1c2d3-0bcc-43cd-81b9-72438a4e0c6f",
+      "DisplayName": "TestController",
+      "ColorIndex": 5
+    },
+    "b92011be-b302-4537-a1ca-b99334400537": {
+      "ProjectGuid": "b92011be-b302-4537-a1ca-b99334400537",
+      "DisplayName": "TestService",
+      "ColorIndex": 6
+    },
+    "9c165c43-4ee5-4f83-884f-87cc135935f1": {
+      "ProjectGuid": "9c165c43-4ee5-4f83-884f-87cc135935f1",
+      "DisplayName": "TestDAL",
+      "ColorIndex": 7
+    },
+    "6244c595-4cb0-4636-9b41-f458ca5ce23b": {
+      "ProjectGuid": "6244c595-4cb0-4636-9b41-f458ca5ce23b",
+      "DisplayName": "TestRepo",
+      "ColorIndex": 8
+    }
+  },
+  "NextColorIndex": 9
+}

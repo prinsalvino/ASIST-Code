@@ -9738,11 +9738,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ASIST-Code\\ServiceLayer\\ServiceLayer.csproj",
+      "projectUniqueName": "D:\\ASIST-Mo\\ASIST\\ASIST-Project-Web-API\\ServiceLayer\\ServiceLayer.csproj",
       "projectName": "ServiceLayer",
-      "projectPath": "D:\\ASIST-Code\\ServiceLayer\\ServiceLayer.csproj",
+      "projectPath": "D:\\ASIST-Mo\\ASIST\\ASIST-Project-Web-API\\ServiceLayer\\ServiceLayer.csproj",
       "packagesPath": "C:\\Users\\prins\\.nuget\\packages\\",
-      "outputPath": "D:\\ASIST-Code\\ServiceLayer\\obj\\",
+      "outputPath": "D:\\ASIST-Mo\\ASIST\\ASIST-Project-Web-API\\ServiceLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\prins\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -9759,11 +9759,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\ASIST-Code\\DAL\\DAL.csproj": {
-              "projectPath": "D:\\ASIST-Code\\DAL\\DAL.csproj"
+            "D:\\ASIST-Mo\\ASIST\\ASIST-Project-Web-API\\DAL\\DAL.csproj": {
+              "projectPath": "D:\\ASIST-Mo\\ASIST\\ASIST-Project-Web-API\\DAL\\DAL.csproj"
             },
-            "D:\\ASIST-Code\\Domain\\Domain.csproj": {
-              "projectPath": "D:\\ASIST-Code\\Domain\\Domain.csproj"
+            "D:\\ASIST-Mo\\ASIST\\ASIST-Project-Web-API\\Domain\\Domain.csproj": {
+              "projectPath": "D:\\ASIST-Mo\\ASIST\\ASIST-Project-Web-API\\Domain\\Domain.csproj"
             }
           }
         }
@@ -9802,7 +9802,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.1.21463.6\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes;
 using Newtonsoft.Json;
@@ -12,10 +13,15 @@ namespace Domain
 
         [JsonIgnore]
         public virtual ICollection<SkillStudent> SkillsAssessed { get; set; }
-        
-        [JsonIgnore]
-        public virtual ICollection<Organisation> Organisations { get; set; }
 
+        [JsonIgnore]
+        private ICollection<Organisation> organisations;
+        [JsonIgnore]
+        public virtual ICollection<Organisation> Organisations
+        {
+            get { return organisations ?? (organisations = new Collection<Organisation>()); }
+            set { organisations = value; }
+        }
         public Coach()
         {
             this.UserRole = UserRoles.Coach;

@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes;
-
+using System.ComponentModel.DataAnnotations.Schema;
 namespace Domain
 {
     public class UserBase
@@ -10,15 +10,20 @@ namespace Domain
         public long UserId { get; set; }
         
         [OpenApiProperty(Description = "gets or sets the first name")]
+        [Required]
         public string FirstName { get; set; }
         
         [OpenApiProperty(Description = "gets or sets the last name")]
+        [Required]
         public string LastName { get; set; }
         
         [OpenApiProperty(Description = "gets or sets the email address")]
+        [Required]
+        [EmailAddress]
         public string EmailAddress { get; set; }
         
         [OpenApiProperty(Description = "gets or sets the password")]
+        [Required]
         public string Password { get; set; }
         
         [OpenApiProperty(Description = "gets or sets the user roles")]

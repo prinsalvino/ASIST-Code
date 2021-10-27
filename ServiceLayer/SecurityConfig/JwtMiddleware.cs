@@ -1,54 +1,57 @@
 using System;
+using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using Domain;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Azure.Functions.Worker;
+using Microsoft.Azure.Functions.Worker.Middleware;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using Newtonsoft.Json;
 using ServiceLayer;
+using ServiceLayer.ServiceInterfaces;
 
-namespace ASIST.Helpers
+namespace ServiceLayer.SecurityConfig
 {
-    public class JwtMiddleware
+    public class JwtMiddleware : IFunctionsWorkerMiddleware
     {
-        private readonly RequestDelegate _request;
-        private readonly AppSettings _appSettings;
-
-        public JwtMiddleware(RequestDelegate request, IOptions<AppSettings> appSettings)
+        ITokenService TokenService { get; }
+        ILogger Logger { get; }
+        public JwtMiddleware(ITokenService tokenService, ILogger<JwtMiddleware> logger)
         {
-            _request = request;
-            _appSettings = appSettings.Value;
+            TokenService = tokenService;
+            Logger = logger;
         }
-        public async Task Invoke(HttpContext context, IUserService userService)
+     
+        public async Task Invoke(FunctionContext Context, FunctionExecutionDelegate Next)
         {
-            var token = context.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
+            string HeadersString = (string)Context.BindingContext.BindingData["Headers"];
 
-            if (token != null)
-                attachUserToContext(context, userService, token);
+            Dictionary<string, string> Headers = JsonConvert.DeserializeObject<Dictionary<string, string>>(HeadersString);
 
-            await _request(context);
-        }
-
-        private void attachUserToContext(HttpContext context, IUserService userService, string token)
-        {
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
-            tokenHandler.ValidateToken(token, new TokenValidationParameters
+            if (Headers.TryGetValue("Authorization", out string AuthorizationHeader))
             {
-                ValidateIssuerSigningKey = true,
-                IssuerSigningKey = new SymmetricSecurityKey(key),
-                ValidateIssuer = false,
-                ValidateAudience = false,
-                ClockSkew = TimeSpan.Zero
-            }, out SecurityToken validatedToken);
+                try
+                {
+                    AuthenticationHeaderValue BearerHeader = AuthenticationHeaderValue.Parse(AuthorizationHeader);
 
-            var jwtToken = (JwtSecurityToken)validatedToken;
-            var userId = int.Parse(jwtToken.Claims.First(x => x.Type == "id").Value);
+                    ClaimsPrincipal User = await TokenService.GetByValue(BearerHeader.Parameter);
 
-            context.Items["User"] = userService.GetUser(userId);
+                    Context.Items.Add("User",User);
+                }
+                catch (Exception e)
+                {
+                    Logger.LogError(e.Message);
+                }
+            }
+
+            await Next(Context);
         }
     }
 }

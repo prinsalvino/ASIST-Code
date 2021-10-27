@@ -1,0 +1,18 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "servers_asist_project_server_name": {
+            "value": null
+        },
+        "function_asistproject9app_name": {
+            "value": null
+        },
+        "storageAccounts_asiststorageaccount_name": {
+            "value": null
+        },
+        "serverfarms_ASP_ASISTProjectWebAPI_a2d9_name": {
+            "value": null
+        }
+    }
+}

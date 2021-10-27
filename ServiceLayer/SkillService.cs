@@ -1,7 +1,10 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using ASIST.Repository;
+using DAL;
+using DAL.RepoInterfaces;
 using Domain;
+using ServiceLayer.ServiceInterfaces;
 
 namespace ServiceLayer
 {
@@ -14,15 +17,41 @@ namespace ServiceLayer
             _repository = repository;
         }
 
-        public IEnumerable<SkillStudent> GetAll(long studentId)
+        public IEnumerable<Skill> GetAllSkills()
         {
-            return _repository.GetAll().Where(e=>e.StudentId == studentId);
-        }
+            try
+            {
+                var skills = _repository.GetAll().ToList();
+                if (skills == null || !skills.Any())
+                {
+                    throw new Exception("No skills found");
+                }
 
-        public void AddSkills(List<SkillStudent> skillStudents)
+                return skills;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+        }
+        public Skill GetSkillById(long skillId)
         {
-            _repository.AddMany(skillStudents);
-        }
+            try
+            {
+                var skill = _repository.GetSingle(skillId);
+                if (skill == null)
+                {
+                    throw new Exception("Skill not found");
+                }
 
+                return skill;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+        }
     }
 }

@@ -41,21 +41,16 @@
       "DisplayName": "Domain",
       "ColorIndex": 6
     },
-    "dffa4555-e517-4836-85da-43babb13c73d": {
-      "ProjectGuid": "dffa4555-e517-4836-85da-43babb13c73d",
-      "DisplayName": "Test",
-      "ColorIndex": 7
-    },
     "7bdcd939-cfd6-475b-bdfa-fe3bc146b592": {
       "ProjectGuid": "7bdcd939-cfd6-475b-bdfa-fe3bc146b592",
       "DisplayName": "Domain",
-      "ColorIndex": 8
+      "ColorIndex": 7
     },
-    "59ce1ec6-e0f0-4b95-a669-0bbfa6d4295b": {
-      "ProjectGuid": "59ce1ec6-e0f0-4b95-a669-0bbfa6d4295b",
-      "DisplayName": "DAL",
-      "ColorIndex": 9
+    "dffa4555-e517-4836-85da-43babb13c73d": {
+      "ProjectGuid": "dffa4555-e517-4836-85da-43babb13c73d",
+      "DisplayName": "Test",
+      "ColorIndex": 8
     }
   },
-  "NextColorIndex": 10
+  "NextColorIndex": 9
 }

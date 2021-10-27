@@ -1,8 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
+using DAL.RepoInterfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace ASIST.Repository
+namespace DAL
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity: class
     {

@@ -15,11 +15,13 @@ namespace Domain
         public long StudentId { get; set; }
         [ForeignKey("StudentId")]
         [OpenApiProperty(Description = "gets or sets the student")]
+      
         public virtual Student Student { get; set; }
         
         public long? SkillId { get; set; }
         [ForeignKey("SkillId")]
         [OpenApiProperty(Description = "gets or sets the skill")]
+       
         public virtual Skill Skill { get; set; }
         
         public long? CoachId { get; set; }
@@ -27,10 +29,12 @@ namespace Domain
         [OpenApiProperty(Description = "gets or sets the coach")]
         public virtual Coach Coach { get; set; }
         
-        [OpenApiProperty(Description = "gets or sets the time of completion")]        
+        [OpenApiProperty(Description = "gets or sets the time of completion")]  
+        [Required]
         public long TimeOfCompletion { get; set; }
 
         [OpenApiProperty(Description = "gets or sets the time of completion")]
+        [Required]
         public DateTime DateOfSkill { get; set; }
         
         [OpenApiProperty(Description = "gets or sets the score")]

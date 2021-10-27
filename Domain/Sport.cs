@@ -19,8 +19,6 @@ namespace Domain
         [OpenApiProperty(Description = "gets or sets the sports advices")]
         [JsonIgnore]
         public virtual ICollection<SportStudent> SportAdvices { get; set; }
-
-        //[OpenApiProperty(Description = "gets or sets the score of skill")]
-        //public int Score { get; set; }
+        
     }
 }

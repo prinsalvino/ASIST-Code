@@ -1,0 +1,1042 @@
+[
+  {
+    "name": "GetAdmins",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.AdminHttpTrigger.GetAdmins",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "GET"
+        ],
+        "route": "v2/admins"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "GetAdminById",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.AdminHttpTrigger.GetAdminById",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "GET"
+        ],
+        "route": "v2/admins/{adminId}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "AddAdmin",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.AdminHttpTrigger.AddAdmin",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "POST"
+        ],
+        "route": "v2/admins"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "UpdateAdmin",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.AdminHttpTrigger.UpdateAdmin",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "PUT"
+        ],
+        "route": "v2/admins/{adminId}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "DeleteAdmin",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.AdminHttpTrigger.DeleteAdmin",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "DELETE"
+        ],
+        "route": "v2/admins/{adminId}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "Login",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.AuthenticationHttpTrigger.Login",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "POST"
+        ],
+        "route": "login"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "GetCoaches",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.CoachHttpTrigger.GetCoaches",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "GET"
+        ],
+        "route": "coaches"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "GetCoachesById",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.CoachHttpTrigger.GetCoachesById",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "GET"
+        ],
+        "route": "coaches/{coachId}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "AddCoach",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.CoachHttpTrigger.AddCoach",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "POST"
+        ],
+        "route": "coaches"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "UpdateCoach",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.CoachHttpTrigger.UpdateCoach",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "PUT"
+        ],
+        "route": "coaches/{coachId}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "GetOrganisationsByCoachId",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.CoachHttpTrigger.GetOrganisationsByCoachId",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "GET"
+        ],
+        "route": "coaches/{coachId}/organisations"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "AddOrganisation",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.OrganisationsHttpTrigger.AddOrganisation",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "POST"
+        ],
+        "route": "organisations"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "GetOrganisations",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.OrganisationsHttpTrigger.GetOrganisations",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "GET"
+        ],
+        "route": "organisations"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "GetOrganisationsById",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.OrganisationsHttpTrigger.GetOrganisationsById",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "GET"
+        ],
+        "route": "organisations/{organisationId}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "GetStudentsByOrganisationId",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.OrganisationsHttpTrigger.GetStudentsByOrganisationId",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "GET"
+        ],
+        "route": "organisations/{organisationId}/students"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "GetCoachesByOrganisation",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.OrganisationsHttpTrigger.GetCoachesByOrganisation",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "GET"
+        ],
+        "route": "organisations/{organisationId}/coaches"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "AssignStudentToOrganisation",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.OrganisationsHttpTrigger.AssignStudentToOrganisation",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "POST"
+        ],
+        "route": "organisations/{organisationId}/students/{studentId}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "AssignCoachToOrganisation",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.OrganisationsHttpTrigger.AssignCoachToOrganisation",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "POST"
+        ],
+        "route": "organisations/{organisationId}/coaches/{coachId}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "UnAssignCoachFromOrganisation",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.OrganisationsHttpTrigger.UnAssignCoachFromOrganisation",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "DELETE"
+        ],
+        "route": "organisations/{organisationId}/coaches/{coachId}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "GetSkills",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.SkillHttpTrigger.GetSkills",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "GET"
+        ],
+        "route": "skills"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "GetSkillById",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.SkillHttpTrigger.GetSkillById",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "GET"
+        ],
+        "route": "skills/{skillId}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "AddSkillLapTimes",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.SkillPerformedHttpTrigger.AddSkillLapTimes",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "POST"
+        ],
+        "route": "skillsperformed/{studentId}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "GetSkillsPerformedByStudentId",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.SkillPerformedHttpTrigger.GetSkillsPerformedByStudentId",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "GET"
+        ],
+        "route": "skillsperformed/{studentId}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "RemoveAllSkillsPerformedByStudent",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.SkillPerformedHttpTrigger.RemoveAllSkillsPerformedByStudent",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "DELETE"
+        ],
+        "route": "skillsperformed/{studentId}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "GetSportAdviceByStudentIdAndSportId",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.SportAdviceHttpTrigger.GetSportAdviceByStudentIdAndSportId",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "GET"
+        ],
+        "route": "sportadvices/{studentId}/{sportId}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "GetSportAdvicesByStudentId",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.SportAdviceHttpTrigger.GetSportAdvicesByStudentId",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "GET"
+        ],
+        "route": "sportadvices/{studentId}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "RemoveAllSportAdvicesByStudent",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.SportAdviceHttpTrigger.RemoveAllSportAdvicesByStudent",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "DELETE"
+        ],
+        "route": "sportadvices/{studentId}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "GetSports",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.SportHttpTrigger.GetSports",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "GET"
+        ],
+        "route": "sports"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "GetSportsById",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.SportHttpTrigger.GetSportsById",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Function",
+        "methods": [
+          "GET"
+        ],
+        "route": "sports/{sportId}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "GetStudents",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.StudentHttpTrigger.GetStudents",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "GET"
+        ],
+        "route": "students"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "GetStudentsById",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.StudentHttpTrigger.GetStudentsById",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "GET"
+        ],
+        "route": "students/{studentId}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "AddStudent",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.StudentHttpTrigger.AddStudent",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "POST"
+        ],
+        "route": "students"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "UpdateStudent",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.StudentHttpTrigger.UpdateStudent",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "PUT"
+        ],
+        "route": "students/{studentId}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "DeleteStudent",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.StudentHttpTrigger.DeleteStudent",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "DELETE"
+        ],
+        "route": "students/{studentId}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "GetTestsAttemptedByStudentId",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.TestAttemptHttpTrigger.GetTestsAttemptedByStudentId",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "GET"
+        ],
+        "route": "testsattempted/{studentId}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "RemoveAllTestsAttemptedByStudent",
+    "scriptFile": "ASIST-Web-API.dll",
+    "entryPoint": "ASIST_Web_API.Controllers.TestAttemptHttpTrigger.RemoveAllTestsAttemptedByStudent",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "DELETE"
+        ],
+        "route": "testsattempted/{studentId}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "RenderSwaggerDocument",
+    "scriptFile": "Microsoft.Azure.Functions.Worker.Extensions.OpenApi.dll",
+    "entryPoint": "Microsoft.Azure.Functions.Worker.Extensions.OpenApi.DefaultOpenApiHttpTrigger.RenderSwaggerDocument",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "GET"
+        ],
+        "route": "swagger.{extension}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "RenderOpenApiDocument",
+    "scriptFile": "Microsoft.Azure.Functions.Worker.Extensions.OpenApi.dll",
+    "entryPoint": "Microsoft.Azure.Functions.Worker.Extensions.OpenApi.DefaultOpenApiHttpTrigger.RenderOpenApiDocument",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "GET"
+        ],
+        "route": "openapi/{version}.{extension}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "RenderSwaggerUI",
+    "scriptFile": "Microsoft.Azure.Functions.Worker.Extensions.OpenApi.dll",
+    "entryPoint": "Microsoft.Azure.Functions.Worker.Extensions.OpenApi.DefaultOpenApiHttpTrigger.RenderSwaggerUI",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "GET"
+        ],
+        "route": "swagger/ui"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "RenderOAuth2Redirect",
+    "scriptFile": "Microsoft.Azure.Functions.Worker.Extensions.OpenApi.dll",
+    "entryPoint": "Microsoft.Azure.Functions.Worker.Extensions.OpenApi.DefaultOpenApiHttpTrigger.RenderOAuth2Redirect",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "GET"
+        ],
+        "route": "oauth2-redirect.html"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  }
+]
